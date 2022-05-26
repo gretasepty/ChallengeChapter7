@@ -6,10 +6,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import binar.greta.challengechapter7.R
 import binar.greta.challengechapter7.model.GetAllFilmItem
+import binar.greta.challengechapter7.room.FilmDB
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_film.view.*
 
-class AdapterFilm(private var onClick :(GetAllFilmItem) -> Unit) : RecyclerView.Adapter<AdapterFilm.ViewHolder>() {
+class AdapterFilm( private var onClick :(GetAllFilmItem) -> Unit) : RecyclerView.Adapter<AdapterFilm.ViewHolder>() {
 
     private var datafilm : List<GetAllFilmItem>?= null
     fun setdatafilm(film : List<GetAllFilmItem>){
@@ -37,6 +38,8 @@ class AdapterFilm(private var onClick :(GetAllFilmItem) -> Unit) : RecyclerView.
         holder.itemView.cardFilm.setOnClickListener{
             onClick(datafilm!![position])
         }
+
+
     }
 
     override fun getItemCount(): Int {

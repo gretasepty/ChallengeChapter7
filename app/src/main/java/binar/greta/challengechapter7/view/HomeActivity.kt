@@ -9,6 +9,7 @@ import binar.greta.challengechapter7.R
 import binar.greta.challengechapter7.viewmodel.VMFilm
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.item_film.*
 
 @AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
@@ -16,6 +17,10 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         getHome()
+
+//        btnFavList.setOnClickListener {
+//            startActivity(Intent(this, ProfileActivity::class.java))
+//        }
     }
 
     fun getHome(){

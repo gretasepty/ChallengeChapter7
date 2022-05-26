@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:orientation="vertical"
+    android:layout_margin="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.HomeActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Welcome"
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/btnFav"
+            android:src="@drawable/favorite"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <RelativeLayout
+            android:layout_width="6dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/btnPerson"
+            android:src="@drawable/person"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_film"
