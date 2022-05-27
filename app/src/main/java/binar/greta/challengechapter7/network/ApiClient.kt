@@ -39,4 +39,13 @@ object ApiClient {
     @Singleton
     fun provideFilmApi(retrofit: Retrofit): ApiService =
         retrofit.create(ApiService::class.java)
+
+    val instance : ApiService by lazy {
+        val retrofit = Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .client(clint)
+            .build()
+        retrofit.create(ApiService::class.java)
+    }
 }

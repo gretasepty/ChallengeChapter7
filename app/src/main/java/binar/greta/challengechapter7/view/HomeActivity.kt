@@ -18,6 +18,14 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         getHome()
 
+        btnPerson.setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
+
+        btnFav.setOnClickListener {
+            startActivity(Intent(this, FavoriteActivity::class.java))
+        }
+
 //        btnFavList.setOnClickListener {
 //            startActivity(Intent(this, ProfileActivity::class.java))
 //        }

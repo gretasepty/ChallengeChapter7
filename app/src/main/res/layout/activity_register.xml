@@ -10,61 +10,43 @@
     tools:context=".view.RegisterActivity">
 
     <TextView
-        android:textColor="@color/black"
-        android:layout_marginTop="40dp"
         android:layout_marginBottom="20dp"
-        android:gravity="center"
+        android:layout_marginTop="20dp"
         android:textStyle="bold"
-        android:textSize="20sp"
-        android:text="Register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <ImageView
-        android:layout_marginBottom="30dp"
-        android:src="@drawable/ic_launcher_background"
+        android:textSize="18sp"
         android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:text="Register"
+        android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:src="@drawable/cinema"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/img_filmReg"
         android:layout_width="100dp"
         android:layout_height="100dp"/>
     <EditText
-        android:textSize="15sp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/corner"
-        android:gravity="center"
-        android:hint="Username"
+        android:hint="Masukkan username"
         android:id="@+id/edt_usernameReg"
         android:layout_width="match_parent"
-        android:layout_height="40dp"/>
+        android:layout_height="wrap_content"/>
     <EditText
-        android:textSize="15sp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/corner"
-        android:gravity="center"
-        android:hint="Email"
-        android:id="@+id/edt_emailReg"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"/>
-    <EditText
-        android:textSize="15sp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/corner"
-        android:gravity="center"
-        android:hint="Password"
+        android:hint="Masukkan password"
         android:id="@+id/edt_passwordReg"
         android:layout_width="match_parent"
-        android:layout_height="40dp"/>
+        android:layout_height="wrap_content"/>
     <EditText
-        android:textSize="15sp"
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/corner"
-        android:gravity="center"
-        android:hint="Kondirmasi Password"
-        android:id="@+id/edt_UlangPasswordReg"
+        android:hint="Masukkan konfirmasi password"
+        android:id="@+id/edt_konPassReg"
         android:layout_width="match_parent"
-        android:layout_height="40dp"/>
+        android:layout_height="wrap_content"/>
     <Button
-        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
         android:id="@+id/btn_register"
+        android:layout_marginTop="200dp"
         android:text="Register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

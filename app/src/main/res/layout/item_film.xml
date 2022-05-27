@@ -41,17 +41,18 @@
                 android:id="@+id/txt_sutradara"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:id="@+id/btnFavList"
-                    android:layout_marginRight="10dp"
-                    android:src="@drawable/favlist"
-                    android:layout_alignParentRight="true"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"/>
-            </RelativeLayout>
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/btnFavList"-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:src="@drawable/favlist" />-->
+<!--            </RelativeLayout>-->
         </LinearLayout>
     </LinearLayout>
 

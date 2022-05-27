@@ -5,6 +5,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import binar.greta.challengechapter7.model.GetAllFilmItem
+import binar.greta.challengechapter7.model.GetAllUser
+import binar.greta.challengechapter7.model.GetAllUserItem
 import binar.greta.challengechapter7.network.ApiService
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
@@ -17,6 +19,8 @@ class VMFilm @Inject constructor(apiService: ApiService)
 
     private var filmLiveData = MutableLiveData<List<GetAllFilmItem>>()
     val film : LiveData<List<GetAllFilmItem>> = filmLiveData
+
+
 
     init {
         viewModelScope.launch {

@@ -13,20 +13,20 @@ class FavoriteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_favorite)
-
-        getFavorite()
+//
+//        getFavorite()
     }
 
-    fun getFavorite(){
-        val mDB = FilmDB.getInstance(this)
-        GlobalScope.launch {
-            val a = mDB!!.daoFilm().getFilm()
-            runOnUiThread {
-                if (a != null){
-                    rv_film.layoutManager = LinearLayoutManager(this@FavoriteActivity)
-                    rv_film.adapter = AdapterFavList(a)
-                }
-            }
-        }
-    }
+//    fun getFavorite(){
+//        val mDB = FilmDB.getInstance(this)
+//        GlobalScope.launch {
+//            val a = mDB!!.daoFilm().getFilm()
+//            runOnUiThread {
+//                if (a != null){
+//                    rv_film.layoutManager = LinearLayoutManager(this@FavoriteActivity)
+//                    rv_film.adapter = AdapterFavList(a)
+//                }
+//            }
+//        }
+//    }
 }

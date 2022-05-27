@@ -18,6 +18,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".view.LoginBaru"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".view.ProfileActivity"
             android:exported="false" />
         <activity
@@ -28,20 +37,15 @@
             android:exported="false" />
         <activity
             android:name=".view.LoginActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".view.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".view.HomeActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" />
