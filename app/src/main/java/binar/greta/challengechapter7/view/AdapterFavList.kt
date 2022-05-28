@@ -15,6 +15,8 @@ import kotlinx.coroutines.async
 
 class AdapterFavList(private var datafav: List<Film>) :
     RecyclerView.Adapter<AdapterFavList.ViewHolder>() {
+
+    private var mDB : FilmDB? = null
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     }
@@ -35,7 +37,7 @@ class AdapterFavList(private var datafav: List<Film>) :
                 .into(holder.itemView.img_filmFav)
 
 //  Menghapus favorite di halaman Favorite
-            val mDB = FilmDB.getInstance(this.context)
+            mDB = FilmDB.getInstance(this.context)
             btn_FavList.setOnClickListener {
                 GlobalScope.async {
                     val result = mDB!!.daoFilm().deleteFilm(data)

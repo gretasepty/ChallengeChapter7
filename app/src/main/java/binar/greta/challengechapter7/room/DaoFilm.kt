@@ -12,7 +12,7 @@ interface DaoFilm {
     fun addFilm(film : Film) : Long
 
     @Query("SELECT * FROM Film")
-    fun getFilm() : List<Film>
+    fun getFavorite() : List<Film>
 
     @Delete
     fun deleteFilm(film: Film) : Int

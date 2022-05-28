@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardFilm"
     android:layout_margin="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
 
     <LinearLayout
         android:orientation="horizontal"
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content">
         <ImageView
             android:src="@drawable/ic_launcher_background"
-            android:id="@+id/img_filmFav"
+            android:id="@+id/img_film"
             android:layout_margin="5dp"
             android:layout_gravity="center"
             android:layout_width="100dp"
@@ -27,31 +28,32 @@
                 android:textColor="@color/black"
                 android:text="Title"
                 android:textStyle="bold"
-                android:id="@+id/txt_judulFav"
+                android:id="@+id/txt_judul"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>z
             <TextView
                 android:text="Release Date"
-                android:id="@+id/txt_tanggalFav"
+                android:id="@+id/txt_tanggal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
                 android:text="Director"
-                android:id="@+id/txt_sutradaraFav"
+                android:id="@+id/txt_sutradara"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:id="@+id/btn_FavList"
-                    android:layout_marginRight="10dp"
-                    android:src="@drawable/favlist"
-                    android:layout_alignParentRight="true"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"/>
-            </RelativeLayout>
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/btnFavList"-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:src="@drawable/favlist" />-->
+<!--            </RelativeLayout>-->
         </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</androidx.cardview.widget.CardView>

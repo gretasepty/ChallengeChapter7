@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.asLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import binar.greta.challengechapter7.R
 import binar.greta.challengechapter7.viewmodel.VMFilm
@@ -13,9 +14,18 @@ import kotlinx.android.synthetic.main.item_film.*
 
 @AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
+    lateinit var userManagerBaru: UserManagerBaru
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        userManagerBaru = UserManagerBaru(this)
+        userManagerBaru.userNama.asLiveData().observe(this, {
+            txtWelcome.text = "Welcome ${it.toString()}"
+        })
+
         getHome()
 
         btnPerson.setOnClickListener {
@@ -26,9 +36,6 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, FavoriteActivity::class.java))
         }
 
-//        btnFavList.setOnClickListener {
-//            startActivity(Intent(this, ProfileActivity::class.java))
-//        }
     }
 
     fun getHome(){

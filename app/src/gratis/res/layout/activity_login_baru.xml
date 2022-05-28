@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.LoginBaru">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Selamat Datang,"
+        android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Log in sekarang untuk ke beranda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:background="@drawable/corner"
+        android:hint="Username"
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/corner"
+        android:hint="Password"
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+    <Button
+        android:layout_marginTop="70dp"
+        android:textAllCaps="false"
+        android:id="@+id/btn_login"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <TextView
+        android:id="@+id/txt_register"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="Belum punya akun?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

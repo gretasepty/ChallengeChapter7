@@ -28,7 +28,10 @@ class ProfileActivity : AppCompatActivity() {
         userManagerBaru = UserManagerBaru(this)
 
         btn_logout.setOnClickListener{
-            startActivity(Intent(this, LoginActivity::class.java))
+            GlobalScope.launch {
+                userManagerBaru.hapusData()
+            }
+            startActivity(Intent(this, LoginBaru::class.java))
         }
 
         userManagerBaru.userNama.asLiveData().observe(this){
